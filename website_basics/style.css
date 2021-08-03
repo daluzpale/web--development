@@ -4,8 +4,12 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-a :hover {
-    background-color: red;
+a {
+    color: gray;
+    text-decoration: none;
+}
 
-
+a:hover {
+    background-color:yellowgreen;
+    color: white;
 }
