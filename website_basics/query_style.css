@@ -1,0 +1,17 @@
+@media screen and (min-width: 750px) {
+    .responsive {
+        display: inline-block;
+        width: 200px;
+        border: solid 1px black;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .responsive {
+        display: inline-block;
+        width: 600px;
+        border: solid 1px black;
+        text-align: center;
+    }
+}
