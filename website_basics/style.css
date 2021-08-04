@@ -13,3 +13,17 @@ a:hover {
     background-color:yellowgreen;
     color: white;
 }
+
+.redlink:hover{
+    background-color: red;
+    color: white;
+}
+
+.indent {
+    margin-left: 10px;
+    color:red;
+}
+
+.space_below {
+    margin-bottom: 30px;
+}
