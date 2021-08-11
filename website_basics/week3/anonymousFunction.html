@@ -7,7 +7,8 @@
         $(document).ready(function () {
             $('#title').html('Goodbye!');
             $('button').click(function () {
-                $('#title').hide();
+                $('#title').html('Hello');
+                $('p').hide();
             });
 
         });
@@ -16,6 +17,7 @@
 
 <body>
     <h2 id="title">Hello</h2>
+    <p>This is a paragraph</p>
 
     <button style="background-color:tomato; border: 3px solid black;">Click</button>
 </body>
