@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Image Gallery</title>
 
-        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
 
-        <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
-        <script src="jquery-3.6.0.min.js"></script>
-    </head>
+    <link rel="stylesheet" type="text/css" href="gallery.css">
 
-    <body>
-        <a href="index.html">Home</a>
-        &nbsp;
-        <a href="about.html">About</a>
-        &nbsp;
-        <a href="contact.html">Contact</a>
-        <hr>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
 
-        <div class="container-fluid">
-            <h2>Image Gallery</h2>
+<body>
+    <a href="index.html">Home</a>
+    &nbsp;
+    <a href="about.html">About</a>
+    &nbsp;
+    <a href="contact.html">Contact</a>
+    <hr>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <img class="colum" src="img_I.jpg" alt="Grafitti">
-                </div>
+    <div class="container-fluid">
+        <h2 style="text-align: center; margin-bottom: 10px;">Image Gallery</h2>
 
-                <div class="col-md-3">
-                    <img class="colum" src="img_II.jpg" alt="British meal">
-                </div>
-
-                <div class="col-md-3">
-                    <img class="colum" src="img_III.jpg" alt="Display of cheese">
-                </div>
-
-                <div class="col-md-3">
-                    <img class="colum" src="img_IV.jpg" alt="Eletronic lab">
-                </div>
-
-                <div class="colum">
-                    <img src="img_V.jpg" alt="Road night view">
-                </div>
-
+        <div class="row">
+            <div class="col-md-3">
+                <img class="column" src="img_I.jpg" alt="Grafitti">
             </div>
 
+            <div class="col-md-3">
+                <img class="column" src="img_II.jpg" alt="British meal">
+            </div>
+
+            <div class="col-md-3">
+                <img class="column" src="img_III.jpg" alt="Display of cheese">
+            </div>
+
+            <div class="col-md-3">
+                <img class="column" src="img_IV.jpg" alt="Eletronic lab">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img id="bigImg" class="bigImg" src="img_V.jpg" alt="Road night view">
+                </div>
+            </div>
 
         </div>
 
+    </div>
 
-    </body>
+</body>
 
 </html>
