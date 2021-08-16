@@ -12,12 +12,14 @@
     <h2 id="number" onclick="count();"></h2>
 </body>
 
-    <script>
-        var i = 0;
+<script>
+    var i = 0;
+    $('#number').html(i);
+
+    function count() {
+        i = i + 1;
         $('#number').html(i);
-        function count() {
-            i = i + 1;
-            $('#number').html(1);
-        };
-    </script>
+    };
+</script>
+
 </html>
