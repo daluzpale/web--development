@@ -3,24 +3,21 @@
 
 <head>
     <title>counter</title>
-    <script>
-        scr = "jquery-3.6.0.min.js"
-    </script>
+
+    <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-
     <h2 id="number" onclick="count();"></h2>
-
-
-    <script>
-        var i = 0;
-        $('#number').html(i);
-        function count() {
-            i = i + 1;
-            $('#number').html(i);
-        };
-    </script>
 </body>
 
+<script>
+    var i = 0;
+    $('#number').text(i);
+
+    function count() {
+        i = i + 1;
+        $('#number').text(i);
+    }
+</script>
 </html>
