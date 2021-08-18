@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="slideShow.css">
+
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <a href="slideShow.html">Home</a>
+    &nbsp;
+    <a href="about.html">About</a>
+    &nbsp;
+    <a href="contact.html">Contact</a>
+    <hr>
+
+    <div class="container-fluid">
+        <h2 style=" margin-bottom: 10px;">Image Gallery</h2>
+
+        <div class="row">
+            <div class="col-md-3">
+                <img id="image1" class="column" src="img_I.jpg" alt="Grafitti">
+            </div>
+
+            <div class="col-md-3">
+                <img id="image2" class="column" src="img_II.jpg" alt="Display of cheese">
+            </div>
+
+            <div class="col-md-3">
+                <img id="image3" class="column" src="img_III.jpg" alt="British meal">
+            </div>
+
+            <div class="col-md-3">
+                <img id="image4" class="column" src="img_IV.jpg" alt="Eletronics workshop">
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-1">
+                    <button id="forward" style="background-color: dodgerblue;">&lt;</button>
+                </div>
+                <div class="col-md-10">
+                    <img id="bigImg" class="large-img" src="img_V.jpg" alt="Road night view">
+                </div>
+                <div class="col-md-1">
+                    <button id="backward" style="background-color:dodgerblue;">&gt;</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var paused = false;
+
+        $('.column').click(function () {
+            $('#bigImg').attr('src',
+                $(this).attr('src'));
+        });
+
+        var i = 1;
+        $("#image" + i).click();
+
+        $("#backward").click(function () {
+            i = i - 1;
+            if (i < 1) {
+                i = 4;
+            }
+            $("#image" + i).click();
+        });
+
+        $("#forward").click(function () {
+            i = i + 1;
+            if (i > 4) {
+                i = 1;
+            }
+            $("#image" + 1).click();
+        });
+
+        $("#bigImg").click(function () {
+            paused = !paused;
+        })
+
+        setInterval(function () {
+            if (!paused) {
+                $("#forward").click();
+            };
+        }, 3000);
+    </script>
+
+</body>
+
+</html>
