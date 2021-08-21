@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>eReader</title>
-        <meta charset="UTF-8">
 
-        <!-- allow proper rendering and touch zooming
+<head>
+    <title>eReader</title>
+    <meta charset="UTF-8">
+
+    <!-- allow proper rendering and touch zooming
         in accordance with user's device -->
-        <meta name="viewport" content="width=device=width, initial-scale=1">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
 
-        <!-- import bootstrap
+    <!-- import bootstrap
             compiled css -->
-        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
-        <!-- import compiled JavaScript-->
-        <script src="bootstrap.min.js"></script>
+    <!-- import compiled JavaScript-->
+    <script src="bootstrap.min.js"></script>
 
-        <!-- import jQuery library-->
-        <script src="jquery-3.6.0.min.js"></script>
-    </head>
+    <!-- import jQuery library-->
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
 
-    <body>
-        <div class="container-fluid pt-1">
+<body>
+    <div class="container-fluid pt-1">
         <!--- A grey horizontal navbar that becomes vertical on small screens-->
-        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+
+            <!-- collapsible navbar on smaller screens-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <!-- links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="eReader.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="eReader.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
         </nav>
 
-        
-        </div>
-    </body>
+
+    </div>
+</body>
+
 </html>
