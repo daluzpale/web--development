@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <title>Image Gallery</title>
 
+    <!-- import bootstrap -->
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
+    <!-- import the stylesheet -->
     <link rel="stylesheet" type="text/css" href="slideShow.css">
 
+    <!-- import jQuery library-->
     <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+    <!--These are the links on the navegation bar -->
     <a href="slideShow.html">Home</a>
     &nbsp;
     <a href="about.html">About</a>
@@ -20,7 +24,8 @@
     <a href="contact.html">Contact</a>
     <hr>
 
-    <div class="container-fluid">
+    <!-- These are the thumbnail images -->
+    <div class="container">
         <h2 style=" margin-bottom: 10px;">Image Gallery</h2>
 
         <div class="row">
@@ -39,8 +44,11 @@
             <div class="col-md-3">
                 <img id="image4" class="column" src="img_IV.jpg" alt="Eletronics workshop">
             </div>
-
-
+            
+            <!--
+                This is the large image.
+                It has buttons for moving forward and backwards on the images.
+            -->
             <div class="row">
                 <div class="col-md-1">
                     <button id="forward" style="background-color: dodgerblue;">&lt;</button>
@@ -58,37 +66,65 @@
     </div>
 
     <script>
+        // whether the slideshow is rolling or it's paused.
         var paused = false;
 
+        // when you click the thumbnail
+        // It pulls the source of the large image
+        // to be same as the image you clicked.
         $('.column').click(function () {
             $('#bigImg').attr('src',
                 $(this).attr('src'));
         });
 
+        // the counter variabe that keeps track
+        // of the image I clcik
         var i = 1;
+
+        // this loads an image
+        // into the large image
         $("#image" + i).click();
 
+        // when I click backward
+        // load the previous image
         $("#backward").click(function () {
+        // go back one in the counter
             i = i - 1;
+        // if the image is below 1
+        // then reset (loop back to image 4)
             if (i < 1) {
                 i = 4;
             }
+        // load the image into the large image
             $("#image" + i).click();
         });
 
+        // when I clcik forward
+        // select the next image
         $("#forward").click(function () {
+        // go forward one in the counter
             i = i + 1;
+        // if the image is above 4 (the last image)
+        // reset the counter to 1 (the first image)
             if (i > 4) {
                 i = 1;
             }
+        // load the image into the large image.
             $("#image" + 1).click();
         });
 
+        // when I click the large image
+        // if it is paused
+        // set to not paused
+        // if it's not paused set to paused.
         $("#bigImg").click(function () {
             paused = !paused;
         });
 
+        // set an interval makes it move
+        // forward every 3 seconds.
         setInterval(function () {
+        // first check if it is paused.
             if (!paused) {
                 $("#forward").click();
             };
