@@ -1,10 +1,14 @@
-#myNav {
-    padding: 20px;
+.myNav {
     font-size: 17px;
+    overflow: auto;
+}
+
+.myNav a{
+    padding: 12px;
+  
 }
 
 form.src button {
     cursor: pointer;
-    margin-right: 500px;
 }
 

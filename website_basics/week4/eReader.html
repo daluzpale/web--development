@@ -29,59 +29,67 @@
 </head>
 
 <body>
-    <!-- navegation bar -->
-    <nav class="navbar navbar-expand-sm bg-danger navbar-dark" id="myNav">
+    <div class="myNav">
+        <!-- navegation bar -->
+        <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
 
-        <!-- collapsible button on small screens -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- collapsible button on small screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- links -->
-        <div class="collapse navbar-collapse" id="collapsibleNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="eReader.html">Home</a>
-                </li>
+            <!-- links -->
+            <div class="collapse navbar-collapse" id="collapsibleNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="eReader.html"><i class="fa fa-home"></i>Home</a>
+                    </li>
 
-                <!-- dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="books.html" id="navbardrop" data-toggle="dropdown">
-                        Books
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Business</a>
-                        <a class="dropdown-item" href="#">Action and Adventure</a>
-                        <a class="dropdown-item" href="#">Young Adult</a>
-                        <a class="dropdown-item" href="#">Horror</a>
-                        <a class="dropdown-item" href="#">Fiction</a>
-                        <a class="dropdown-item" href="#">Science</a>
-                        <a class="dropdown-item" href="#">History and Bios</a>
-                        <a class="dropdown-item" href="#">Technology</a>
-                        <a class="dropdown-item" href="#">Religion</a>
-                        <a class="dropdown-item" href="#">Self-Development</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="books.html" id="navbardrop" data-toggle="dropdown">
+                            <i class="fa fa-book"></i>Books
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Business</a>
+                            <a class="dropdown-item" href="#">Action and Adventure</a>
+                            <a class="dropdown-item" href="#">Young Adult</a>
+                            <a class="dropdown-item" href="#">Horror</a>
+                            <a class="dropdown-item" href="#">Fiction</a>
+                            <a class="dropdown-item" href="#">Science</a>
+                            <a class="dropdown-item" href="#">History and Bios</a>
+                            <a class="dropdown-item" href="#">Technology</a>
+                            <a class="dropdown-item" href="#">Religion</a>
+                            <a class="dropdown-item" href="#">Self-Development</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fa fa-users"></i>About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fa fa-paper-plane"></i>Contact Us</a>
+                    </li>
 
-            </ul>
-        </div>
-
-        <form class="form-inline, src" action="/action_page.php" accept-charset="utf-8">
-            <div class="input-group mb-1">
-                <input type="text" class="form-control" placeholder="Search..." name="search">
-                <div class="input-group-append">
-                    <button class="btn btn-warning" type="submit"><i class="fa fa-search"></i></button>
-                </div>
+                </ul>
             </div>
-        </form>
-    </nav>
+
+            <form class="form-inline, src" action="/action_page.php" accept-charset="utf-8">
+                <div class="input-group md-1 input-group-sm">
+                    <input type="text" class="form-control" placeholder="Search..." name="search">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-user"></i>Log in</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
 
 </body>
-
 </html>
