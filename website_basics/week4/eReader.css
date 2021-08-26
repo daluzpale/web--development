@@ -1,16 +1,21 @@
 .myNav {
-    font-size: 16px;
+    font-size: 18px;
     overflow: auto;
+    padding: 16px 12px;
 
 }
 
 .myNav a{
-    padding: 16px 12px;
-    font-weight: bold;
+
   
 }
 .myNav form{
     cursor: pointer;
+    margin-right: center;
 }
 
+.carousel-inner img{
+    max-height: 400px;
+    width: 100%;
+}
 
