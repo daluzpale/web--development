@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'ABeeZee', sans-serif;
 }
 
 * {
@@ -19,3 +19,29 @@ body {
     width: 100%;
 }
 
+.myNav {
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    display: inline-block;
+    padding: 2% 4%;
+    background:  #4e707762;
+    width: 100%;
+}
+
+.myNav a {
+    flex: 1;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+}
+
+.myNav a:hover {
+    border-bottom: 3px solid red;
+  }
+  

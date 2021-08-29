@@ -11,6 +11,14 @@
     <!-- load the local CSS -->
     <link rel="stylesheet" type="text/css" href="dashboard-styles.css">
 
+    <!-- load the icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- load google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Abel&family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,24 +26,17 @@
     <!-- NavBar on image-->
     <div class="bg-img">
 
+        <!-- Navegation Bar -->
         <div class="myNav">
-            <a href="dashboard.html"><img src="logoI.png"></a>
+            <a class="active" href="dashboard.html">Home</a>
 
-            <a class="active" href="dashboard.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="#discover"><i class="fa fa-fw fa-angle-down"></i>Discover</a>
 
-            <a href="#discover"><i class="fa fa-fw fa-book"></i>Discover</a>
+            <a href="#about"><i class="fa fa-fw fa-angle-down"></i>About</a>
 
-            <a href="#about"><i class="fa fa-fw fa-users"></i>About</a>
+            <a href="#news">News</a>
 
-            <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-
-            <!-- Search Bar -->
-            <div class="search-box">
-                <form action="#">
-                    <input type="text" placeholder="Search by title, author or keyword" name="search">
-                    <button type="submit" value="Search"><i class="fa fa-fw fa-search"></i></button>
-                </form>
-            </div>
+            <a href="#contact">Contact Us</a>
         </div>
 
 
