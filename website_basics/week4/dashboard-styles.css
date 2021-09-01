@@ -19,7 +19,7 @@ body {
     width: 100%;
 }
 
-.myNav {
+.topnav {
     display: flex;
     position: relative;
     overflow: hidden;
@@ -27,7 +27,7 @@ body {
     background: #2f474e04;
 }
 
-.myNav a {
+.topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -38,10 +38,15 @@ body {
     border-bottom: 2px solid transparent;
 }
 
-.myNav a:hover {
+.topnav a:hover {
     border-bottom: 2px solid red;
 }
 
+.topnav a.active {
+    border-bottom: 2px solid red;
+}
 
-
-
+.topnav-right {
+    float: right;
+    
+}
