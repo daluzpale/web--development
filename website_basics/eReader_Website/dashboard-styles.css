@@ -14,7 +14,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
     min-height: 100vh;
     width: 100%;
 }
@@ -26,7 +25,7 @@ body {
     background: #2f474e04;
 }
 
-.topnav img{
+.topnav img {
     width: 150px;
     margin-top: -60px;
 }
@@ -46,6 +45,7 @@ body {
     border-bottom: 2px solid red;
     transition: 0.5s;
 }
+
 .topnav-right {
     float: right;
 }
@@ -62,6 +62,50 @@ body {
     opacity: 0.8;
 }
 
-.topnav-right a.active:hover{
+.topnav-right a.active:hover {
     opacity: 1.0;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border:  2px solid #0000;
+    float: left;
+    width: 340px;
+    background: #f1f1f1;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+form.search button {
+    width: 100px;
+    padding: 10px;
+    background:white;
+    color: white;
+    font-size: 17px;
+    border:  1px solid #0000;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    outline: none;
+    opacity: 0.8;
+}
+
+form.search button:hover {
+    background:  #ff0000;
+    opacity: 1;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
 }
