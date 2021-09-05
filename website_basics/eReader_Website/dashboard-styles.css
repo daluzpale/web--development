@@ -71,40 +71,54 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 17px;
+
 }
 
-form.search input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border:  2px solid #0000;
-    float: left;
-    width: 340px;
-    background: #f1f1f1;
-    border-radius: 25px 0 0 25px;
-    outline: none;
+.box p {
+    font-size: 24px;
+    color: #00c853da;
 }
 
-form.search button {
-    width: 100px;
-    padding: 10px;
-    background:white;
+.box h2 {
+    font-size: 36px;
     color: white;
-    font-size: 17px;
-    border:  1px solid #0000;
-    border-left: none;
-    cursor: pointer;
-    border-radius: 0 25px 25px 0;
+}
+
+.search {
+    margin-top: 25px;
+}
+
+.search input[type=text] {
+    padding: 0 10px;
+    height: 40px;
+    width: 60%;
+    border-radius: 25px 0 0 25px;
+    background-color: #eeeeee;
+    border:none;
     outline: none;
-    opacity: 0.8;
+    font-size: 17px;
+    float: left;
+
 }
 
-form.search button:hover {
-    background:  #ff0000;
-    opacity: 1;
+.search button {
+    position: relative;
+    float: left;
+    height: 40px;
+    width: 80px;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #e53935;
+    background-color: #eeeeee;
+    margin-left: -2px;
+    cursor: pointer;
+
 }
 
-form.search::after {
+.search::after {
     content: "";
     clear: both;
     display: table;
